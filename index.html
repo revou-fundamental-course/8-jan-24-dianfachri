@@ -2,10 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<header>
+    <H1>Katik <span class="subtitle">Kalkulator Matematik</span> </H1>
+</header>
 <body>
-    
+    <script src="js/script.js"></script>
+    <center>
+    <div class="app">
+<h2>Welcome to Katik</h2>
+<p>Hai Sobat, Selamat datang di Katik :)<br>
+Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangunan datar
+</p>
+<button class="button" id="btnluas" onclick="luasPersegi()">Luas Persegi</button>
+<button class="buttonPersegi" id="btnkeliling" onclick="kelilingPersegi()">Keliling Persegi</button>
+<section id="luasPersegi" style="display: block;">
+ <div class="header2">LUAS PERSEGI</div>
+<div class="square">
+<p>Rumus Luas Persegi yaitu:</p>
+<center>L = S x S</center><br>
+<p>Dimana:</p>
+L = Luas<br>
+S= Sisi<br>
+<hr>
+<center><h2>Hitung Luas Persegi</h2> </center>
+<form>
+<input type="number" placeholder="Nilai Sisi" id="sisi"><br>
+<p id="HasilHitung"></p>
+<center><input class="buttonsubmit" value="Hitung"  onclick="hitungLuas()"></center>
+</form><br>
+<button class="buttonreset" onclick="Reset()">Reset</button><br>
+<br> </div><BR><br> 
+</section>
+
+<section id="kelilingPersegi" style="display: none;">
+    <div class="header2">KELILING PERSEGI</div>
+   <div class="square">
+   <p>Rumus Keliling Persegi yaitu:</p>
+   <center>K = 4 x S</center><br>
+   <p>Dimana:</p>
+   K = Keliling<br>
+   S= Sisi<br>
+   <hr>
+   <center><h2>Hitung Keliling Persegi</h2> </center>
+   <form>
+   <input type="number" placeholder="Nilai Sisi" id="sisi2"><br>
+   <p id="HasilHitungKeliling"></p>
+   <center><input class="buttonsubmit" value="Hitung"  onclick="hitungKeliling()"></center>
+   </form><br>
+   <button class="buttonreset" onclick="Reset()">Reset</button><br>
+   <br> </div><BR><br></div> 
+   </section>
+</div>
+
+
+</center>
+
 </body>
+<footer>
+    <div class="footer">Allright reserved 2024</div>
+</footer>
 </html>
